@@ -6,7 +6,7 @@ function App() {
   const [bots, setBots] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:3000/bots")
+    fetch(`https://bot-battlr-db-json.onrender.com/bots`)
     .then(res => res.json())
     .then(data => setBots(data))
   }, [])
