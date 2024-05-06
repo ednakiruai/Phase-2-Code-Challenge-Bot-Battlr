@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Phase-2-Code-Challenge-Bot-Battlr/static/css/main.d070eabf.css",
-    "main.js": "/Phase-2-Code-Challenge-Bot-Battlr/static/js/main.728ec9ab.js",
+    "main.js": "/Phase-2-Code-Challenge-Bot-Battlr/static/js/main.45f35422.js",
     "static/js/453.52e1f0e5.chunk.js": "/Phase-2-Code-Challenge-Bot-Battlr/static/js/453.52e1f0e5.chunk.js",
     "index.html": "/Phase-2-Code-Challenge-Bot-Battlr/index.html",
     "main.d070eabf.css.map": "/Phase-2-Code-Challenge-Bot-Battlr/static/css/main.d070eabf.css.map",
-    "main.728ec9ab.js.map": "/Phase-2-Code-Challenge-Bot-Battlr/static/js/main.728ec9ab.js.map",
+    "main.45f35422.js.map": "/Phase-2-Code-Challenge-Bot-Battlr/static/js/main.45f35422.js.map",
     "453.52e1f0e5.chunk.js.map": "/Phase-2-Code-Challenge-Bot-Battlr/static/js/453.52e1f0e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d070eabf.css",
-    "static/js/main.728ec9ab.js"
+    "static/js/main.45f35422.js"
   ]
 }
