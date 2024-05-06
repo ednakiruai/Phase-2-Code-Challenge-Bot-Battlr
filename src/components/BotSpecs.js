@@ -12,11 +12,9 @@ function BotSpecs(){
             setBots(data)
         })
     }, [id])
-
-   
     return(
        <div>
-         <div className="col-sm-3 mb-4" key={Bots.id}>
+         <div className="col-sm-3 mb-4" >
         
             <div className="card">
               <img className="card-img-top"src={Bots.avatar_url} style={{backgroundColor: "gray",borderRadius:"70%"}} alt="Avatar"/>
@@ -29,7 +27,6 @@ function BotSpecs(){
                         <p className="card-text">Catchphrase: {Bots.catchphrase}</p>
                         <p className="card-text">Created At: {Bots.created_at}</p>
                         <p className="card-text">Updated At: {Bots.updated_at}</p>
-                       
                         <Link to="/Phase-2-Code-Challenge-Bot-Battlr">
                        <button className="btn btn-success btn-sm m-2">BACK</button>
                        </Link>

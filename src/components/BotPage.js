@@ -1,11 +1,12 @@
 
+
 function BotPage({ army, removeFromArmy }) {
     const handleRemoveFromArmy = (id) => {
       removeFromArmy(id);
     };
   
     const displayedArmy = army.slice(0, 4);
-  
+
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
