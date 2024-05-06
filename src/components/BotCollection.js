@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import SortBar from "./SortBot";
 import ClassFilter from "./BotFilter";
-function Bot({bots, handleDelete}){
+function Bot({bots, handleDelete,}){
   const [enlistedBots, setEnlistedBots] = useState([]);
   const [sortOption,setSortOption] = useState("")
   const [selectedClasses, setSelectedClasses] = useState([]);
@@ -71,12 +71,13 @@ function Bot({bots, handleDelete}){
         {sortedBots.map(bot => (
             <div className="col-sm-3 mb-4" key={bot.id}>
             <div className="card">
-              <Link to={"/Phase-2-Code-Challenge-Bot-Battlr/Bots/" + bot.id}><img className="card-img-top"src={bot.avatar_url} style={{backgroundColor: "gray"}} alt="Avatar"/></Link>
+              <img className="card-img-top"src={bot.avatar_url} style={{backgroundColor: "gray"}} alt="Avatar"/>
               <div className="card-body">
               <h2 className="card-title">{bot.name}</h2>
               <p className="card-text">{bot.created_at}</p>
               <p className="card-text">{bot.updated_at}</p>
               <button className="btn btn-success btn-sm m-2" onClick={() => addBot(bot)}>ENLIST</button>
+              <Link to={"/Phase-2-Code-Challenge-Bot-Battlr/Bots/" + bot.id} className="btn btn-primary btn-sm m-2">VIEW</Link>
               <BotArmy id={bot.id} onDelete={handleDelete}/>
             </div>
             </div>

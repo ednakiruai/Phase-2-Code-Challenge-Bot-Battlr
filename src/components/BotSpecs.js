@@ -12,6 +12,9 @@ function BotSpecs(){
             setBots(data)
         })
     }, [id])
+    // const handleEnlist = () => {
+    //     addBot(Bots);
+    // };
     return(
        <div>
          <div className="col-sm-3 mb-4" >
@@ -27,6 +30,7 @@ function BotSpecs(){
                         <p className="card-text">Catchphrase: {Bots.catchphrase}</p>
                         <p className="card-text">Created At: {Bots.created_at}</p>
                         <p className="card-text">Updated At: {Bots.updated_at}</p>
+                        {/* <button className="btn btn-success btn-sm m-2" onClick={handleEnlist}>ENLIST</button> */}
                         <Link to="/Phase-2-Code-Challenge-Bot-Battlr">
                        <button className="btn btn-success btn-sm m-2">BACK</button>
                        </Link>

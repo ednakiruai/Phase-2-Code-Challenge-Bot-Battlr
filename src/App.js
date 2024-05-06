@@ -16,6 +16,7 @@ function App() {
   return (
     <div>
        <Bot bots={bots} handleDelete={handleDelete}/>
+
     </div>
   )
 }

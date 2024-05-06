@@ -11,7 +11,7 @@ function BotArmy({ id, onDelete }) {
     }
 
     return (
-        <button onClick={handleClick} className="btn btn-danger">X</button>
+        <button onClick={handleClick} className="btn btn-danger btn-sm mx-2">X</button>
     )
     }
 
