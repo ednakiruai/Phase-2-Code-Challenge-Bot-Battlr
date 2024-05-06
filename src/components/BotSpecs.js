@@ -2,14 +2,6 @@ import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
-// const botTypeClasses = {
-//     Assault: "icon military",
-//     Defender: "icon shield",
-//     Support: "icon plus circle",
-//     Medic: "icon ambulance",
-//     Witch: "icon magic",
-//     Captain: "icon star",
-//   };
 function BotSpecs(){
     const {id} = useParams()
     const [Bots,setBots] = useState({})
