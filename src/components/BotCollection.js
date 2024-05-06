@@ -1,6 +1,7 @@
 import BotArmy from "./BotArmy";
 import BotPage from "./BotPage"
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function Bot({bots, handleDelete}){
   const [enlistedBots, setEnlistedBots] = useState([]);
   function addBot(bot) {
@@ -22,7 +23,7 @@ function Bot({bots, handleDelete}){
         {bots.map(bot => (
             <div className="col-sm-3 mb-4" key={bot.id}>
             <div className="card" >
-              <Link to={`/Phase-2-Code-Challenge-Bot-Battlr/Bots/${bot.id}`}><img className="card-img-top"src={bot.avatar_url} style={{backgroundColor: "gray"}} alt="Avatar"/></Link>
+              <Link to={"/Phase-2-Code-Challenge-Bot-Battlr/Bots/" + bot.id}><img className="card-img-top"src={bot.avatar_url} style={{backgroundColor: "gray"}} alt="Avatar"/></Link>
               <div className="card-body">
               <h2 className="card-title">{bot.name}</h2>
               <p className="card-text">{bot.created_at}</p>
